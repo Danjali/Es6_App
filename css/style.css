@@ -5,40 +5,45 @@ body {
   font-family: Arial;
 }
 
-.tabs
-{
-	position: relative;
-    clear: both;
-    padding: 30px 0 0 30px;
+.Table {
+    display: table;
+    table-layout: fixed;
+    width: 50%;
 }
 
-.tabs .tab
-{
-	float: left;
-	margin-right: 10px;
+.Title {
+    display: table-caption;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
-.content
-{
-	position: absolute;
-	background-color: white;
-	width: 100%;
-	left: 0px;
-  padding: 30px;
-  font-size: 30px;
+.Heading {
+    display: table-row;
+    font-weight: bold;
+    text-align: center;
 }
 
-.tabs .tab:nth-of-type(1) .content
-{
-	z-index: 1;
+.Row {
+    display: table-row;
 }
 
-.tab:target a
-{
-	font-weight: bold;
+.Cell {
+    display: table-cell;
+    border-width: thin;
+    border: solid;
+    padding :0 5px 0 5px;
+    min-width: 232px;
+    max-width: 150;
 }
 
-.tab:target .content
-{
-	z-index: 1;
+.tab-content h3{
+    font-size: 30px;
+}
+
+.tab-content h4{
+    font-size: 15px;
+}
+.nav-tabs{
+  font-size: 18px;
 }

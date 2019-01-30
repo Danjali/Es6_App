@@ -1,27 +1,53 @@
 <html>
 <head>
 <title>Navigation Tab</title>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link href="css/style.css" rel="stylesheet" />
 
 </head>
 <body>
-	<div class="tabs">
+	<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#menu1">Student Results</a></li>
+  </ul>
+	<div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Check student result by clicking the above link</h3>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Click on student name to check the details</h3>
+			<div class ="Table">
+				<div class="heading">
+					<div class = "Cell">
+						<h4>First Name</h4>
+					</div>
+					<div class= "Cell">
+						<h4>Last Name</h4>
+					</div>
+					<div class= "Cell">
+			 			<h4>Percentage</h4>
+					</div>
+				<div class="Row" ng-repeat="x in results">
+          <div class= "Cell">
+						<span>{{x.firstName}}</span>
+          </div>
+          <div class= "Cell">
+						<span>{{x.lastName}}</span>
+         </div>
+          <div class= "Cell">
 
-		<div class="tab" id="tab1">
-			<a href="#tab1">Home</a>
-			<div class="content">
-				Check student result by clicking the above link
-			</div>
-		</div>
+          </div>
+        </div>
+ 				</div>
+</div>
+<div>
 
-		<div class="tab" id="tab2">
-			<a href="#tab2">Student Result</a>
-			<div class="content">
-			  Click on student name to check the details
-			</div>
-		</div>
-	</div>
+
+    </div>
+  </div>
+
 	<script src="dist/main.js"></script>
 	<!-- <script src="src/index.js"></script> -->
 	<!-- <script src="src/index2.js"></script> -->
