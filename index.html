@@ -1,9 +1,5 @@
 <html>
-<<<<<<< HEAD
 <head>
-=======
-	<head>
->>>>>>> 50fdae066ac7361bc52a2fb0bd2067d8055598a7
 		<title>Navigation Tab</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -11,11 +7,11 @@
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs" id="tabs">
 	    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
 	    <li><a data-toggle="tab" href="#menu1">Student Results</a></li>
 	  </ul>
-		<div class="tab-content">
+		<div id="tabsContent" class="tab-content">
 	    <div id="home" class="tab-pane fade in active">
 	      <h3>Check student result by clicking the above link</h3>
 	    </div>
@@ -25,16 +21,18 @@
 					<li class="Heading">
 						<div class="Cell"> First Name </div>
 						<div class="Cell"> Last Name </div>
-<<<<<<< HEAD
 						<div class="Cell"> Percentage </div>
 					</li>
-					<li>
-						<div class="Row" id="div1">{{firstName}} </div>
-						<div class="Row" id="div1">{{lastName}} </div>
-						<div class="Row" id="div1">{{percentage}} </div>
-=======
-						<div class="Cell">Percentage </div>
->>>>>>> 50fdae066ac7361bc52a2fb0bd2067d8055598a7
+	 			</ul>
+			</div>
+			<div id="menu2" class="tab-pane fade">
+				<ul id="resultTable1" class="Table">
+					<li class="Heading">
+						<div class="Cell"> English </div>
+						<div class="Cell"> Hindi </div>
+						<div class="Cell"> Mathematics </div>
+						<div class="Cell"> Total </div>
+						<div class="Cell"> Percentage </div>
 					</li>
 	 			</ul>
 			</div>
