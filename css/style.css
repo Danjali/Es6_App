@@ -1,8 +1,8 @@
 html,
 body {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
 }
 
 .Table {
@@ -18,17 +18,13 @@ body {
     font-size: larger;
 }
 
-.Heading {
+.Heading, ul li {
     display: table-row;
     font-weight: bold;
     text-align: center;
 }
 
-.Row {
-    display: table-row;
-}
-
-.Cell {
+.Cell, ul li div {
     display: table-cell;
     border-width: thin;
     border: solid;
@@ -37,13 +33,18 @@ body {
     max-width: 150;
 }
 
-.tab-content h3{
+.tab-content h3 {
     font-size: 30px;
 }
 
-.tab-content h4{
+.tab-content h4 {
     font-size: 15px;
 }
-.nav-tabs{
-  font-size: 18px;
+
+.nav-tabs {
+    font-size: 18px;
+}
+
+.redBg {
+    background-color: red;
 }
