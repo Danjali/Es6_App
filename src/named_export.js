@@ -1,10 +1,3 @@
-class Studentresults {
-  connstructor(name, lname, marks){
-    this._name = name;
-    this._name = name;
-    this._name = name;
-  }
-}
 
 const results = [
   {"firstName": "Sanket", "lastName":"Gadade","marks":{"english":70, "hindi":60,"mathematics":46}},
